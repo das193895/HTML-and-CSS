@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+   
+
+        /* active --> the appearance of the text or link when we are visiting the page first time*/
+        a:active{
+            color:#d92121;
+        }
+
+         /* hover --> is used to change the appearance of text or link after we click on it usually used for an anchor tag and button*/
+         .hello:hover{
+            background-color: #fff;
+            color:black;
+            border:1px solid brown;
+        }
+
+        /* visited --> the appearance of the text or link after clicking the link  */
+        a:visited{
+            color:#000000;
+        }
+
+        /* focus --> focuses on the element according to the specified parameters */
+
+        input:focus{
+            font-size:25px;
+            color:#faebd7;
+            background-color: #d92121;
+        }
+
+        /* first-child --> it focuses the mentioned tag as first child of any parent  */
+        a:first-child{
+            background-color: #c6e60e;
+        }
+        
+        /* just like above */
+        a:nth-child(even){
+            background-color: #b61515;
+        }
+
+         /* pseudo elements */
+
+        .lorem::first-line{
+            /* the appearance of the first line will get changed */
+            background-color: #d91717;
+        }
+
+        .lorem::first-letter{
+             /* the appearance of the first letter will get changed */
+             background-color: #d91717;
+        }
+
+       
+        .lorem::before{
+            /* the content part will get attached before the lorem class */
+            content:"pw-skills";
+            color: red;
+        }
+
+        .lorem::after{
+            /* the content part will get attached before the lorem class */
+            content:"pw-skills";
+            color: red;
+        }
+
+        ::selection{
+            /* if we want to select something the following appearances will activate */
+            background-color: yellow;
+            color:red;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+
+    <p class="hello">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Impedit soluta laborum, veniam eius alias in.</p>
+
+    <input type="text">
+
+    <a href="https://accounts.google.com/b/0/AddMailService">gmail link</a>
+
+    <nav>
+        <a href="google.com">gmai link</a>
+        <a href="google.com">gmail link</a>
+        <a href="google.com">gmai link</a>
+    </nav>
+
+    <p class="lorem">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Unde, praesentium? Soluta, molestias? Eaque sed nam quisquam soluta esse? 
+        Tempora alias maxime nemo unde eligendi itaque laboriosam, repellendus 
+        ratione accusamus similique aut rerum cumque ad sit! Accusantium voluptates
+         quae explicabo eos rerum magni quo totam unde beatae modi. Qui, labore voluptas!</p>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            border:1px solid #000000;
+            /* p is originally a block level element but by display method we can change it into inline */
+            display:inline; 
+        }
+
+        #block{
+            border:1px solid hsl(0, 96%, 51%);
+            display:block;
+        }
+
+        .inline-block{
+            border:1px solid #2e0afa;
+            display:inline-block;
+            /* inline-block turn the element into semi block level of a given width */
+            width:100px;
+
+        }
+    </style>
+</head>
+<body>
+
+    <!-- p is a block level element -->
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, quibusdam?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, pariatur!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, officia.</p>
+
+    <br>
+
+    <!-- span is an inline level element-->
+    <span id="block">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, impedit!</span>
+    <span  id="block">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, impedit!</span>
+    <span  id="block">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, impedit!</span>
+
+
+    <span class="inline-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, labore.</span>
+    <span class="inline-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, labore.</span>
+    <span class="inline-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, labore.</span>
+
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .width{
+            border:10px solid #000000;
+            /*it is just finalizing width of that element*/
+            width:100px;
+            /* max-width --> it is denotingthe maximum width ther element can take */
+            max-width:500px;
+            /*it is denoting that whenever there is overflow then the overflown part will be hidden  */
+            overflow:hidden;
+        }
+
+        /* we can define the height charecter as same as the width charecter */
+
+        .box{
+            display:inline-block;
+            height:200px;
+            width:250px;
+            border:10px solid #000000;
+            /* box-sizing keeps the height and width constant */
+            box-sizing: border-box;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- width -->
+    <p class="width">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Dolores maxime harum magnam blanditiis corporis pariatur accusantium
+          dignissimos iure?</p>
+
+    <!-- height -->
+    <p class="height">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, cupiditate?</p>
+    <!-- box-size -->
+    <p class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, facilis?</p>
+    
+</body>
+</html>

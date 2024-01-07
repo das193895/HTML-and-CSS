@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+
+    <style>
+        /* "*" -- It is the univrsal selector which selects evrything */
+        * {
+            margin : "0";
+            background-color: #ebe3e3;
+            color:#f7f1f1;
+        }
+
+        /* selector list -- comma is used to select multiple elements */
+
+        h1,p{
+            background-color: #5614ba;
+            color:#c30a0a;
+
+        }
+
+        /* class selector -- "." is used to select */
+
+        .container{
+            background-color: #72d886;
+            color:#c30a0a;
+        }
+
+        /* id selector -- "#" is used to select */
+
+        #my_list{
+
+            background-color: #72d886;
+            color:#190ac3;
+
+        }
+
+        /* decendent selector -- a space is used to select. it selects all the decendents  */
+        /* it selects all the p element under the main element */
+        /* here it is selecting all the p elements which are under the main element */
+        main p{
+            background-color: #dc5516;
+            color:#635cb0;
+
+        }
+
+        /* child selector -- ">" is used to select */
+        /* it only selects the p element which is directltly child to the main element.  */
+        /* here it is selecting those p element which are child to main element */
+        main>p{
+            background-color: #72d886;
+            color:#c30a0a;
+        }
+
+        /* Adjacent sibling selector -- "+" is used to select */
+        /* it selects the 1st adjacent sibling */
+        /* here it is selecting the first p element whuich is sibling to h1 */
+        h1+p{       
+            background-color: #72d886;
+            color:#c30a0a;
+        }
+
+        /* general sibling selector -- "~" is used to select */
+        /* it selects all the siblings */
+        /* here it is selecting all the p elements which are sibling to the h1 element */
+
+        h1~p{
+            background-color: #5614ba;
+            color:#c30a0a;
+
+        }
+
+
+        /* Attribute selectors -- use "[ ]" to select the required attribures */
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <h1 class="container">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, quo.</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Commodi sequi ab consequatur culpa earum recusandae aperiam unde, 
+        pariatur illum cumque quam. Iusto sequi placeat, dignissimos, doloribus 
+        excepturi eum consequuntur eaque praesentium, vel architecto illo sint maxime 
+        labore explicabo minus libero.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Sit, accusantium? Laboriosam perferendis fugit culpa 
+        tempora in repellat voluptatum! Sint, tenetur?</p>
+
+    <main>
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Laboriosam blanditiis fugit molestiae magnam odit quidem
+                  eos minima iure alias eveniet, eum officia reprehenderit 
+                  quibusdam officiis labore ab magni esse modi.</p>
+        </section>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, quaerat.</p>
+    </main>
+
+
+
+    <ul id="my_list">
+        <li class="items">item 1</li>
+        <li class="items">item 2</li>
+        <li class="items">item 3</li>
+        <li class="items">item 4</li>
+    </ul>
+
+   
+    
+</body>
+</html>

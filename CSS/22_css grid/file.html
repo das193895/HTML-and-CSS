@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+
+            display:grid;
+            height:700px;
+            width:700px;
+            border:2px solid black;
+            /* repeat(3,1fr) or 1fr 1fr 1fr */
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,1fr);
+            /* gap:2px; */
+            /* use gap for giving space between rows and columns*/
+            /* use "row-gap" for giving space between rows */
+            /* use "column-gap" for giving space between columns */
+            /* justify-items ---> used for aligning items with respect to x-axis(start,center,end)  */
+            /* align-items ---> used for aligning items with respect to y-axis(start,center,end)  */
+            /* justify-items:center;
+            align-items:center; */
+        }
+        .box{
+            /* height:100px;
+            width:100px; */
+        }
+        .box1{
+            background-color:red;
+        }
+        .box2{
+            background-color:violet;
+            /* justify-self ---> used for aligning a single item  with respect to x-axis(start,center,end)  */
+            /* align-self ---> used for aligning a single item with respect to y-axis(start,center,end)  */
+        }
+        .box3{
+            background-color:blue;
+        }
+        .box4{
+            background-color:maroon;
+            /* grid-column-start and grid-column-end ---> for spanning items columnwise with respect to the column axis */
+            /* grid-row-start and grid-row-end ---> for spanning items columnwise with respect to the row axis */
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .box5{
+            background-color:green;
+        }
+        .box6{
+            background-color:orange;
+        }
+        .box7{
+            background-color:yellow;
+        }
+        .box8{
+            background-color:black;
+        }
+        .box9{
+            background-color:rgb(23, 207, 38);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+        <div class="box box6"></div>
+        <div class="box box7"></div>
+        <div class="box box8"></div>
+        <div class="box box9"></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            text-align: center;
+            background-color: #1cd1da;
+            font-size: x-large;
+           
+        }
+
+        div::after{
+            content:"welcome to this world"; 
+            }
+
+        
+
+        @media(400px<width<700px){
+            *{
+            text-align: center;
+            background-color: #e45c13;
+            font-size: x-large;
+           
+        }
+
+        div::after{
+            content:"media queries in action"; 
+            }
+        }
+
+        @media(min-width:1000px){
+            *{
+            text-align: center;
+            background-color: #13e42b;
+            font-size: x-large;
+           
+        }
+
+        div::after{
+            content:"even larger screen"; 
+            }
+        }
+
+
+
+        
+
+    </style>
+</head>
+<body>
+
+    <div></div>
+    
+</body>
+</html>

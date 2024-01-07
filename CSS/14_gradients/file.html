@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .linear_gradient{
+            height:500px;
+            /* we can give 2 or multuple colors for gradient */
+            /* we can use a 3rd argument "to-right" or "to-left" or "to-top" or "to-bottom" for deciding orientation of colors */
+            background-image:linear-gradient(red,yellow,black);
+        }
+
+        .radial_gradient{
+            height:500px;
+            /* for radial gradient the default shape is an ellipse and we can change the shape too */
+            background-image:radial-gradient(circle,red,yellow,black);
+            /* background-image:repeating-radial-gradient(red 5%,yellow  10%, black 30%); */
+        }
+
+        .conic_gradient{
+            height:500px;
+            background-image:conic-gradient(red,yellow,black);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="linear_gradient"></div>
+    <div class="radial_gradient"></div>
+    <div class="conic_gradient"></div>
+    
+</body>
+</html>

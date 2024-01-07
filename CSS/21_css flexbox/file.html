@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .box{
+            height:100px;
+            width:100px;
+        }
+
+        .container{
+            /* we can align the items of the container in a row */
+            display:flex;   
+            /* display:inline-flex ---->  we can align the items of the container from column to row but it wont take all the spaceavailable in that line */
+            /* flex-direction ---> for give direction (row,row-reverse,column,column-reverse) */
+            flex-direction: row;   
+            /*flex-wrap ----> used to enable wrap(wrap,nowrap,wrap-reverse) */
+            flex-wrap: wrap ;
+            /* flex-flow: row wrap;  -----> we can use the flex-flow property for enabling both flex-direction ad flrx-wrap property  */
+            flex-flow: row wrap;
+            /* justify-content ----> for aligning the flex-items along the main axis within the flex-box(flex-start,flex-end,center,space-between,space-around,space-evenly) */
+            justify-content:space-evenly;
+            /* align-item ----> for aligning the flex-items along the cross axis within the flex-box(flex-end,flex-start,center,stretch,baseline) */
+            align-items:flex-end;
+            /* gap ---> to leave space between the items (gap,row-gap,column-gap) */
+            row-gap:1px;
+            border:1px solid black;
+            height:400px;
+            
+        }
+
+        .box1{
+            background-color:rgb(52, 25, 227);
+            /* flex item properties */
+            /* order --> how the items are going to place itself with respect to other flex items(default value is 0) */
+            order:1;
+            /* flex-grow */
+            flex-grow:1;
+            flex-shrink:2;
+            flex-basis:300px;
+            /* flex ----> a shorthand property to write flex-grow,flex-shringand flex-basis in one stroke */
+            /* align-self ---> how the element is going to place itself with respect to the cross axis */
+            align-self:stretch;
+        }
+        .box2{
+            background-color: #8beb0f;
+        }
+
+        .box3{
+            background-color:red;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="box box1">Box1</div>
+        <div class="box box2">Box2</div>
+        <div class="box box3">Box3</div>
+
+    </div>
+    
+</body>
+</html>
